@@ -131,8 +131,10 @@ input, textarea, select { font-family: inherit; }
   position: absolute;
   top: 0; right: 0; bottom: 0;
   width: 65%;
-  background: url('Imagenes/BannerWaajChuk.jpeg') center center / cover no-repeat;
-  opacity: 0.9;
+  background: url('Imagenes/BannerWaajChuk.jpeg') center right / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%);
+  mask-image: linear-gradient(to right, transparent 0%, black 40%);
+  opacity: 0.6;
   z-index: 1;
 }
 
