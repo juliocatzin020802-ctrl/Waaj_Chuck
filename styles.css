@@ -130,11 +130,9 @@ input, textarea, select { font-family: inherit; }
 .hero-bg-img {
   position: absolute;
   top: 0; right: 0; bottom: 0;
-  width: 70%;
-  background: url('Imagenes/BannerWaajChuk.jpeg') center center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 85%);
-  mask-image: linear-gradient(to right, transparent 0%, black 85%);
-  opacity: 0.7;
+  width: 100%;
+  background: linear-gradient(to right, var(--ink) 10%, transparent 60%), url('Imagenes/BannerWaajChuk.jpeg') center center / cover no-repeat;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -212,9 +210,8 @@ input, textarea, select { font-family: inherit; }
   .dark-hero .hero-badges-row { justify-content: center; }
   .hero-bg-img {
     width: 100%;
-    -webkit-mask-image: linear-gradient(to top, var(--ink) 20%, transparent 90%);
-    mask-image: linear-gradient(to top, var(--ink) 20%, transparent 90%);
-    opacity: 0.35;
+    background: linear-gradient(to top, var(--ink) 25%, transparent 100%), url('Imagenes/BannerWaajChuk.jpeg') center center / cover no-repeat;
+    opacity: 0.5;
   }
 }
 
