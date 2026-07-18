@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waaj Chuk — Tradición en tu taza</title>
+  <meta name="description" content="Auténtico molido a base de tortilla de maíz tatemada. Una bebida ancestral, libre de cafeína con notas ahumadas." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Google Fonts: Cinzel Decorative (Títulos), Sacramento (Script/Subtítulos), Montserrat (Cuerpo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Sacramento&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="view-site" class="view active">
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo" onclick="scrollToSection('inicio')">WAAJ CHUK</a>
+      <ul class="nav-links">
+        <li><a href="#inicio" onclick="scrollToSection('inicio');return false">Inicio</a></li>
+        <li><a href="#menu" onclick="scrollToSection('menu');return false">Menú</a></li>
+        <li><a href="#historia" onclick="scrollToSection('historia');return false">Historia</a></li>
+        <li><a href="#contacto" onclick="scrollToSection('contacto');return false">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contacto" class="btn-order-nav" onclick="scrollToSection('contacto');return false">
+          Hacer pedido
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#inicio" onclick="scrollToSection('inicio');closeMobileMenu();return false">Inicio</a>
+      <a href="#menu" onclick="scrollToSection('menu');closeMobileMenu();return false">Menú</a>
+      <a href="#historia" onclick="scrollToSection('historia');closeMobileMenu();return false">Historia</a>
+      <a href="#contacto" onclick="scrollToSection('contacto');closeMobileMenu();return false">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="dark-hero">
+    <div class="hero-bg-img"></div>
+    <div class="hero-grid">
+      <div class="anim-fade-up">
+        <div class="hero-badge">🌽 Bebidas Tradicionales</div>
+        <h1 class="hero-title">
+          El sabor de <span class="accent">Nuestras Raíces</span>
+        </h1>
+        <p class="hero-desc">
+          Descubre el auténtico molido a base de tortilla de maíz tatemada. Una bebida ancestral, libre de cafeína, que abraza tu paladar con notas ahumadas y aromas inigualables a hogar.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="scrollToSection('menu')">Ver el menú</button>
+          <button class="btn-outline" onclick="scrollToSection('historia')">Nuestra historia</button>
+        </div>
+        <div class="hero-badges-row">
+          <div class="hero-badge-item"><span>🌱</span> Sin cafeína</div>
+          <div class="hero-badge-item"><span>💗</span> <span class="organic-text">100% Orgánico</span></div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu">
+    <div class="section-header">
+      <span class="section-eyebrow">Nuestras especialidades</span>
+      <h2 class="section-title">El Menú</h2>
+      <p class="section-sub">Molido tradicional, preparado con tortilla de maíz nixtamalizado y tatemado, listo para tu cafetera.</p>
+    </div>
+    <div class="menu-grid" id="menu-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia">
+    <div class="historia-grid">
+      <div class="historia-photos">
+        <div class="historia-photo-1">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=700&h=500&fit=crop&auto=format" alt="Elaboración artesanal" loading="lazy">
+        </div>
+        <div class="historia-photo-2">
+          <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=700&h=500&fit=crop&auto=format" alt="Tostado artesanal" loading="lazy">
+        </div>
+      </div>
+      <div class="historia-text">
+        <span class="section-eyebrow">Nuestro origen</span>
+        <h2>Rescatando tradiciones en cada taza</h2>
+        <p>Buscando alternativas sin cafeína y honrando las tradiciones de nuestras abuelas, comenzamos a tatemar minuciosamente tortillas de maíz para crear una bebida única.</p>
+        <p>Hoy, Waaj Chuk lleva a tu mesa el sabor reconfortante del maíz tatemado, fusionado con ingredientes locales para crear una experiencia inigualable en tu paladar.</p>
+        <div class="historia-features">
+          <div class="feat-card"><div class="fi">🌽</div><h4>100% Maíz</h4><p>Base de maíz nixtamalizado seleccionado.</p></div>
+          <div class="feat-card"><div class="fi">🔥</div><h4>Tatemado lento</h4><p>Para extraer las mejores notas ahumadas.</p></div>
+          <div class="feat-card"><div class="fi">💗</div><h4>Digestivo</h4><p>Naturalmente libre de cafeína.</p></div>
+          <div class="feat-card"><div class="fi">🌿</div><h4 style="color:var(--organic)">100% Orgánico</h4><p>Hecho en Yucatán, México.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO Y ORDENES -->
+  <section id="contacto">
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <span class="section-eyebrow">Haz tu pedido</span>
+        <h2>Estamos aquí para ti 💗</h2>
+        <p>Selecciona el producto y la cantidad que deseas pedir. Te contactaremos directamente por WhatsApp para coordinar tu entrega.</p>
+        
+        <div class="info-cards">
+          <div class="info-card"><span class="ei">📦</span><div><h4>Entregas</h4><p>En toda la zona y alrededores.</p></div></div>
+          <div class="info-card"><span class="ei">🕐</span><div><h4>Horario</h4><p>Lunes a viernes de 7:00 a 18:00 hrs.</p></div></div>
+          <div class="info-card"><span class="ei">📸</span><div><h4>Síguenos</h4><p>@waajchuk</p></div></div>
+          <div class="info-card"><span class="ei">💬</span><div><h4>WhatsApp directo</h4><p>999 267 9073</p></div></div>
+        </div>
+      </div>
+
+      <div class="order-form-card">
+        <div class="order-form-header">
+          <div class="wa-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.124 1.528 5.855L.057 23.882a.5.5 0 0 0 .612.612l6.092-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.483-5.163-1.328l-.36-.207-3.795.909.934-3.71-.228-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </div>
+          <div>
+            <h3>Arma tu pedido</h3>
+            <p>Selecciona los productos y cantidades</p>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>👤 Tu nombre</label>
+          <input type="text" id="order-nombre" placeholder="¿Cómo te llamas?">
+        </div>
+        <div class="form-field">
+          <label>📱 Tu teléfono (opcional)</label>
+          <input type="tel" id="order-tel" placeholder="999-000-0000">
+        </div>
+
+        <div class="form-field">
+          <label>🛍 Elige tus opciones</label>
+          <div class="product-list" id="product-list">
+            <!-- Renderizado vía JS -->
+          </div>
+        </div>
+
+        <div id="notes-section" style="display:none" class="form-field">
+          <label>📝 Notas adicionales / Detalles especiales</label>
+          <textarea id="order-notes" rows="3" placeholder="Especificaciones para la entrega, etc."></textarea>
+        </div>
+
+        <p class="form-error" id="order-error" style="display:none"></p>
+
+        <button class="btn-wa" onclick="sendWhatsApp()">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.124 1.528 5.855L.057 23.882a.5.5 0 0 0 .612.612l6.092-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.483-5.163-1.328l-.36-.207-3.795.909.934-3.71-.228-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Enviar pedido por WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">WAAJ CHUK</div>
+      <div class="footer-links">
+        <a href="#inicio" onclick="scrollToSection('inicio');return false">Inicio</a>
+        <a href="#menu" onclick="scrollToSection('menu');return false">Menú</a>
+        <a href="#historia" onclick="scrollToSection('historia');return false">Historia</a>
+        <a href="#contacto" onclick="scrollToSection('contacto');return false">Contacto</a>
+      </div>
+      <div class="footer-contact">
+        <p class="copy">© 2026 Waaj Chuk · Tradición en tu taza.</p>
+        <a href="mailto:waajchuk@gmail.com">waajchuk@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
