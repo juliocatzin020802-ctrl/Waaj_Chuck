@@ -299,7 +299,7 @@ input, textarea, select { font-family: inherit; }
   box-shadow: var(--shadow-md);
   border: 6px solid var(--white);
   background: var(--ink);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 21 / 9;
 }
 .historia-video-container video {
   width: 100%;
