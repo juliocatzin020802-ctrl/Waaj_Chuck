@@ -9,8 +9,8 @@ const TAG_CLASS = {
 let state = {
   cart: {},
   menuItems: [
-    { id: '1', emoji: '☕', name: 'Waaj Chuk Original', desc: 'Molido de tortilla de maíz tatemada. Sin cafeína, 100% digestivo y natural.', price: '$150', tag: 'Clásico', photo: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=600&h=400&fit=crop' },
-    { id: '2', emoji: '🤎', name: 'Waaj Chuk Canela', desc: 'Nuestro molido de tortilla de maíz tatemada con un toque de canela molida.', price: '$120', tag: 'Con canela', photo: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop' }
+    { id: '1', emoji: '☕', name: 'Waaj Chuk Original', desc: 'Molido de tortilla de maíz tatemada. Sin cafeína, 100% digestivo y natural.', price: '$150', tag: 'Clásico', photo: 'Imagenes/Original.jpeg' },
+    { id: '2', emoji: '🤎', name: 'Waaj Chuk Canela', desc: 'Nuestro molido de tortilla de maíz tatemada con un toque de canela molida.', price: '$120', tag: 'Con canela', photo: 'Imagenes/Canela.jpeg' }
   ],
   content: {
     waNumber: '5219992679073'
