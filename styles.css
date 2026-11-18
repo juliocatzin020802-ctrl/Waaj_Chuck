@@ -243,12 +243,21 @@ input, textarea, select { font-family: inherit; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;
 }
 .menu-card {
+  position: relative;
   background: var(--white); border-radius: var(--radius-xl);
   border: 1px solid var(--border);
   display: flex; flex-direction: column; overflow: hidden;
   transition: transform .3s, box-shadow .3s;
 }
 .menu-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.menu-card-ribbon {
+  position: absolute; top: 1.6rem; left: -4rem; z-index: 2;
+  width: 13rem; padding: .6rem 0; text-align: center;
+  background: #d32f2f; color: #fff;
+  font-family: var(--font-body); font-size: .82rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  transform: rotate(-45deg); pointer-events: none;
+}
 .menu-card-img { height: auto; overflow: hidden; background: var(--secondary); }
 .menu-card-img img { width: 100%; height: auto; display: block; transition: transform .5s; }
 .menu-card:hover .menu-card-img img { transform: scale(1.07); }
